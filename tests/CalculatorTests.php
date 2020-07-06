@@ -4,6 +4,7 @@ use PHPUnit\Framework\TestCase;
 use IW\Workshop\Calculator;
 
 class CalculatorTests extends TestCase{
+    
     public function testAdd(): void{
         $this->assertEquals(9, Calculator::add(7,2));
 
