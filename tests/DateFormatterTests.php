@@ -2,12 +2,12 @@
 
 use PHPUnit\Framework\TestCase;
 use IW\Workshop\DateFormatter;
-use DateTime;
+
 
 class DateFormatterTests extends TestCase{
     public function testGetPartOfDay(): void {
         
-        //tests for Morning
+        //tests for morning
         $this->assertEquals("Morning", DateFormatter::getPartOfDay(new Datetime("2020-07-06 7:15:24")));
         $this->assertEquals("Morning", DateFormatter::getPartOfDay(new Datetime("2020-07-06 6:00:00")));
         $this->assertEquals("Morning", DateFormatter::getPartOfDay(new Datetime("2020-07-06 11:59:59")));
